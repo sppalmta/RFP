@@ -58,7 +58,7 @@ The multiplication factor $k$ can be
 
 When operating the reactor, we usually wish to operate in critical conditions, when the number of neutrons, thus the fission rate, thus the power of the reactor is constant. Nevertheless, the reactor must be able to be supercritical (to increase the power to the required level) and subcritical (to decrease the power or to completely shut down the reactor) as well. Thus one needs to be able to control the reactor.
 
-Nevertheless this often quoted life-cycle point of view definition of the multiplication factor Eq. \ref{eq:kdefault} can be misleading, and is also impractical. The fact is, that it is difficult to follow ``one given'' generation of neutrons. In fact, in a reactor several ``neutron trees'' develop at the same time, therefore it is difficult to tag them to decide which generation do they belong too. Also, Fig. \ref{fig:randomtrees} illustrates a simple case: a neutron has probability $p$ to enter fission, and it is lost from the chain otherwise, and in a fission $nu$ neutrons can be generated. A tree with critical conditions might die out, or grow exponentially, and in fact it will be only for the average of several trees that we can obtain the same number of neutrons in the succeeding generations. Of course, in a real nuclear reactor the number of neutrons are very high ($10^9$ neutron/cm$^3$), so we will in fact only see the average behavior. Lastly, what might be misleading here is that the time between the birth and death of a neutron is random (since it depends on the random path distance between collision, and on the number of scattering a neutron enters etc), thus neutrons of the same generation are not aligned so well in time as shown in Fig. \ref{eq:kdefault}. To summarize, care should be taken when thinking of the neutron transport in generations. 
+Nevertheless this often quoted life-cycle point of view definition of the multiplication factor Eq. \ref{eq:kdefault} can be misleading, and is also impractical. The fact is, that it is difficult to follow ``one given'' generation of neutrons. In fact, in a reactor several ``neutron trees'' develop at the same time, therefore it is difficult to tag them to decide which generation do they belong too. Also, \autoref{fig:randomtrees} illustrates a simple case: a neutron has probability $p$ to enter fission, and it is lost from the chain otherwise, and in a fission $nu$ neutrons can be generated. A tree with critical conditions might die out, or grow exponentially, and in fact it will be only for the average of several trees that we can obtain the same number of neutrons in the succeeding generations. Of course, in a real nuclear reactor the number of neutrons are very high ($10^9$ neutron/cm$^3$), so we will in fact only see the average behavior. Lastly, what might be misleading here is that the time between the birth and death of a neutron is random (since it depends on the random path distance between collision, and on the number of scattering a neutron enters etc), thus neutrons of the same generation are not aligned so well in time as shown in \autoref{eq:kdefault}. To summarize, care should be taken when thinking of the neutron transport in generations. 
 
 \begin{figure}[ht!]
 \protect \centering{
@@ -103,7 +103,7 @@ which can be rearranged with \eqref{eq:krates} and \eqref{eq:krates}
 N(t)=N(0)\exp\Bigg[\Bigg(\frac{k-1}{\ell}\Bigg)t\Bigg]
 \end{equation}
 
-\noindent where the value of $k$ will determine the number of neutrons overtime. In Fig. \ref{fig:basickinetics} one can see that for a supercritical system the average number of neutrons increases in time, for a critical system it stays constant and for subcritical system it decreases. This is in agreement with our previous definitions.
+\noindent where the value of $k$ will determine the number of neutrons overtime. In \autoref{fig:basickinetics} one can see that for a supercritical system the average number of neutrons increases in time, for a critical system it stays constant and for subcritical system it decreases. This is in agreement with our previous definitions.
 
 \begin{figure}[ht!]
 \protect \centering{
@@ -115,7 +115,7 @@ As a note we can mention here that the average neutron lifetime $\ell$ is around
 
 \subsubsection*{2 factor formula}
 
-Let us make a thought experiment in order to study the k-effective. Consider a homogeneous mixture of some nuclear fuel (uranium) and other cooling and structural materials. For our neutron trees in Figure \ref{fig:randomtrees} we considered that the neutron branch either dies out or initiates a fission event producing other neutrons. There are more way to die (or become irrelevant for the chain reaction) for a neutron. As illustrated in Figure \ref{fig:2factors}, there in fact, in a finite core the neutron either gets absorbed or leaves the system before interacting with it. Let's consider that the probability of non-leakage is $P_{NL}$. Then the neutron can be absorbed by a fuel nucleus or by some other nucleus (this is called \textit{parasitic capture}. Let's denote the conditional probability of the neutron being absorbed in fuel if it is absorbed with $P_{AF}$. Finally, the conditional probability if the neutron is absorbed in the fuel then it will initiate a fission event is $P_f$. After fission a number ($\nu$) of neutrons emerge.
+Let us make a thought experiment in order to study the k-effective. Consider a homogeneous mixture of some nuclear fuel (uranium) and other cooling and structural materials. For our neutron trees in \autoref{fig:randomtrees} we considered that the neutron branch either dies out or initiates a fission event producing other neutrons. There are more way to die (or become irrelevant for the chain reaction) for a neutron. As illustrated in \autoref{fig:2factors}, there in fact, in a finite core the neutron either gets absorbed or leaves the system before interacting with it. Let's consider that the probability of non-leakage is $P_{NL}$. Then the neutron can be absorbed by a fuel nucleus or by some other nucleus (this is called \textit{parasitic capture}. Let's denote the conditional probability of the neutron being absorbed in fuel if it is absorbed with $P_{AF}$. Finally, the conditional probability if the neutron is absorbed in the fuel then it will initiate a fission event is $P_f$. After fission a number ($\nu$) of neutrons emerge.
 
 \begin{figure}[ht!]
 \protect \centering{
@@ -207,7 +207,7 @@ The ability of slowing down neutrons can be characterized with \textit{moderatin
 
 $$\xi\Sigma_s/\Sigma_a$$
 
-\noindent As we see from Table \ref{tab:moderator}, the best moderators the ones containing low mass nuclei. However we can also notice, that even though hydrogen is the lightest, it is not the best moderator, when considering absorption as well. This is the reason that for a reactor moderated with light water one needs to enrich uranium in order to make it critical. However if a reactor is moderated with heavy water (such as the CANDU reactors) or graphite (such as the MAGNOX reactors), criticality can be achieved with natural uranium as well. There is obviously a compromise whether we spend our efforts on enriching the fuel, or producing heavy water. 
+\noindent As we see from \autoref{tab:moderator}, the best moderators the ones containing low mass nuclei. However we can also notice, that even though hydrogen is the lightest, it is not the best moderator, when considering absorption as well. This is the reason that for a reactor moderated with light water one needs to enrich uranium in order to make it critical. However if a reactor is moderated with heavy water (such as the CANDU reactors) or graphite (such as the MAGNOX reactors), criticality can be achieved with natural uranium as well. There is obviously a compromise whether we spend our efforts on enriching the fuel, or producing heavy water. 
 
 
 \begin{table}\caption{Moderating properties of various materials}\label{tab:moderator}
@@ -236,7 +236,7 @@ $$\Phi (u)du=\Phi (u)dE/E=\Phi (E)dE$$
 
 $$\Phi(u)=\Phi(E)E$$
 
-Figure \ref{fig:lethargy} makes it even more apparent why working with the lethargy is more natural in slowing down. We can see that the collision density (as discussed soon) is constant. We can also notice that the lethargy is increasing during slowing down: as neutrons get slower they get more ``lethargic''.
+\autoref{fig:lethargy} makes it even more apparent why working with the lethargy is more natural in slowing down. We can see that the collision density (as discussed soon) is constant. We can also notice that the lethargy is increasing during slowing down: as neutrons get slower they get more ``lethargic''.
 
 \begin{figure}[ht!]
 \protect \centering{
@@ -327,7 +327,7 @@ $$c\xi=S$$
 
 $$\Phi(E)=\frac{S}{\xi E\Sigma_s(E)}=\frac{S}{\xi E\Sigma_t(E)}$$
 
-\noindent therefore if we combine our comments on the thermal and fast regions with our recent findings, we can illustrated our idealized neutron spectrum in Figure \ref{fig:idealneutronspectrum}. Notice that we have plotted both $\Phi(E)$ and the lethargic spectrum $E\Phi(E)$. As we will see later, indeed this rough sketch explains the main features of our actual neutron spectra in thermal systems rather well.
+\noindent therefore if we combine our comments on the thermal and fast regions with our recent findings, we can illustrated our idealized neutron spectrum in \autoref{fig:idealneutronspectrum}. Notice that we have plotted both $\Phi(E)$ and the lethargic spectrum $E\Phi(E)$. As we will see later, indeed this rough sketch explains the main features of our actual neutron spectra in thermal systems rather well.
 
 It also needs to be highlighted again, that these results are valid only at energy regions below the source energy. This is often called \textit{asymptotic region}. It is also important to point out that the scattering cross section can be considered independent of energy in the slowing down region, therefore $\Phi(E)\propto 1/E$.
 
@@ -349,7 +349,7 @@ which gives the number of neutrons per unit time passing a certain lethargy (or 
 
 \textbf{Slowing down on Hydrogen in the presence of absorbers}
 
-Let us consider a case more relevant for reactor physics: a homogeneous mixture of hydrogen and heavy absorber nuclei (eg. uranium nuclei). We can notice from Table \ref{tab:moderator} that slowing down on the heavy nuclei can be neglected compared to the slowing down on hydrogen, thus in Eq. \eqref{eq:scatkernel} it is enough to consider hydrogen (for which $\alpha=0$) However, resonance absorption might occur when a neutron interacts with a heavy nucleus. 
+Let us consider a case more relevant for reactor physics: a homogeneous mixture of hydrogen and heavy absorber nuclei (eg. uranium nuclei). We can notice from \autoref{tab:moderator} that slowing down on the heavy nuclei can be neglected compared to the slowing down on hydrogen, thus in Eq. \eqref{eq:scatkernel} it is enough to consider hydrogen (for which $\alpha=0$) However, resonance absorption might occur when a neutron interacts with a heavy nucleus. 
 
 With some laborious derivation (see for example Stacey's book) one can arrive to
 
@@ -371,7 +371,7 @@ $$\phi(E) \approx \frac{E_1\phi(E_1)}{E}$$
 
 $$\phi(E)E \ll \phi(E_1)E_1$$
 
-\noindent the flux is greatly decreased at the resonance energy as illustrated in Figure~\ref{fig:selfshielding} for the notable resonance of U-238 at 6.67 eV. Neutrons that are scattered into the energy range of the resonance are absorbed, but those neutrons that scatter from energies above the resonances to energies below the resonances are not affected. However, due to the reduction in the flux, rate of resonance absorption also decreases, this is called \textit{energy self-shielding}.
+\noindent the flux is greatly decreased at the resonance energy as illustrated in \autoref{fig:selfshielding} for the notable resonance of U-238 at 6.67 eV. Neutrons that are scattered into the energy range of the resonance are absorbed, but those neutrons that scatter from energies above the resonances to energies below the resonances are not affected. However, due to the reduction in the flux, rate of resonance absorption also decreases, this is called \textit{energy self-shielding}.
 
 \begin{figure}[ht!]
 \protect \centering{
@@ -388,7 +388,7 @@ $$\phi(E)E \ll \phi(E_1)E_1$$
 
 3. When the energies are separated by a resonance $E<E_r<E_1$, the first term is again close to unity, however the exponent is slightly less than~1 depending on the resonance width, which implies that the neutron flux is lower at the low energy side of the resonance compared to the high energy side. This is called \textit{resonance shielding}.
 
-Figure \ref{fig:realneutronspectrum} illustrates the spectrum and the lethargic spectrum for a PWR calculation. We can recognize the above mentioned regions: Maxwell-distribution at thermal energies, the source Watt-distribution at fast energies with some influence from inelastic scattering, the close to $1/E$ trend in the slowing down region with the self-shielding effects.
+\autoref{fig:realneutronspectrum} illustrates the spectrum and the lethargic spectrum for a PWR calculation. We can recognize the above mentioned regions: Maxwell-distribution at thermal energies, the source Watt-distribution at fast energies with some influence from inelastic scattering, the close to $1/E$ trend in the slowing down region with the self-shielding effects.
 
 \subsubsection{Resonance escape probability}
 
@@ -442,7 +442,7 @@ Let's recall the phenomena of Doppler-broadening (ie. that the height of the res
 
 \subsection{Neutron cycle: 4 factor formula}
 
-We have previously developed a simple $2 factor$ model to estimate the multiplication factor $k$. Since then however we have studied the neutron spectrum, and discussed how neutrons are slowing down, and if they escape the resonance region then might reach thermal energies and cause fission, therefore we can give a more appropriate model for the neutron cycle that is when neutrons are born in fission, slow down, and might initiate fission thus giving birth to a new generation of neutrons as being illustrated in Figure \ref{fig:neutroncycle}.
+We have previously developed a simple $2 factor$ model to estimate the multiplication factor $k$. Since then however we have studied the neutron spectrum, and discussed how neutrons are slowing down, and if they escape the resonance region then might reach thermal energies and cause fission, therefore we can give a more appropriate model for the neutron cycle that is when neutrons are born in fission, slow down, and might initiate fission thus giving birth to a new generation of neutrons as being illustrated in \autoref{fig:neutroncycle}.
 
 Up to now we have considered homogeneous reactors, but in order to accommodate that in actual reactors the fuel and the moderating material is well separated (for an LWR in the form of fuel rods and coolant channels), we will consider a space and energy dependent flux $\phi(\mathbf{r},E)$ in the following.
 

@@ -77,7 +77,7 @@ n(\mathbf{r},E,\mathbf{\Omega},t)dr^3dEd\mathbf{\Omega}
 
 $$N(\mathbf{r},t)=\int^\infty_0N(\mathbf{r},E,t)dE=\int^\infty_0\int_{4\pi}n(\mathbf{r},E,\mathbf{\Omega},t)d\mathbf{\Omega}dE$$
 
-\noindent which is illustrated in Figure \ref{fig:neutronpopulation}.
+\noindent which is illustrated in \autoref{fig:neutronpopulation}.
 
 Then we can recall, that the actual physical quantity we can directly measure in a reactor is the reaction rate density (similar reaction rates can be defined for the energy integrated population density, or for the angular density):
 
@@ -121,7 +121,7 @@ $$\mathbf{J}(\mathbf{r},t)=\int^\infty_0\mathbf{J}(\mathbf{r},E,t)dE=\int^\infty
 
 Note that $\mathbf{J}(\mathbf{r},t)dS$ is the net rate of neutrons passing through a surface area dS. The flux and the current density are similar, however the current density is a vector. That said the main difference is that the current density is the \textit{net} rate the neutrons pass through a surface oriented in a given direction, whereas the flux is the \textit{total} rate at which neutrons pass through unit area regardless its orientation. So $\mathbf{J}$ is more convenient to describe flow and leakage, whereas $\Phi$ is more convenient to describe reaction rate.
 
-We can define the partial current density (total rates neutrons flow from left to right or right to left) as shown in Figure \ref{fig:partialcurrent}
+We can define the partial current density (total rates neutrons flow from left to right or right to left) as shown in \autoref{fig:partialcurrent}
 
 $$J_\pm (\mathbf{r},t)=\int^\infty_0\int_{2\pi^\pm}\mathbf{e_s}\mathbf{j}(\mathbf{r},E,\mathbf{\Omega},t)d\mathbf{\Omega}dE \: \rightarrow \: \mathbf{e_s}\mathbf{J}(\mathbf{r},t)=[J_+(\mathbf{r},t)-J_-(\mathbf{r},t)]$$
  
@@ -264,7 +264,7 @@ Let's summarize based on these methods how we can handle the variables in the ne
 \item Time is discretized.
 \end{enumerate}
 
-Note that it might be a bit counter intuitive that for the weighted cross section the integral bounderies are $E_g - E_{g-1}$. As we saw earlier when neutrons slow down in energy, therefore it is sometimes more convenient to use a reverse labeling as shown in Figure \ref{fig:energygroups}. Since this used in most practical applications and other textbooks, we have also using this.
+Note that it might be a bit counter intuitive that for the weighted cross section the integral bounderies are $E_g - E_{g-1}$. As we saw earlier when neutrons slow down in energy, therefore it is sometimes more convenient to use a reverse labeling as shown in \autoref{fig:energygroups}. Since this used in most practical applications and other textbooks, we have also using this.
 
 \begin{figure}[ht!]
 \protect \centering{
@@ -411,7 +411,7 @@ $$L=\sqrt{\frac{D}{\Sigma_a}}$$
 0= \nabla^2 \Phi(\mathbf{r})-\frac{k_\infty-1}{L^2}\Phi(\mathbf{r})+\frac{S(\mathbf{r})}{D}
 \end{equation}
 
-The diffusion length $L$ (and the diffusion area $L^2$) have physical interpretations. (See Lewis p154). The average length of one single section in the zigzag would be $\Sigma_t$. But the diffusion length is proportional to the root mean square distance diffused by a neutron between birth and absorption as illustrated in Figure \ref{fig:diffusionlength}.
+The diffusion length $L$ (and the diffusion area $L^2$) have physical interpretations. (See Lewis p154). The average length of one single section in the zigzag would be $\Sigma_t$. But the diffusion length is proportional to the root mean square distance diffused by a neutron between birth and absorption as illustrated in \autoref{fig:diffusionlength}.
 
 \begin{figure}[ht!]
 \protect \centering{
@@ -449,7 +449,7 @@ Clearly now we have used a $B^2$ which only depends on the geometry. Let's call 
 B_ga=\frac{\pi}{2} \rightarrow B_g=\frac{\pi}{2a}
 \]
 
-Of course, at the edge of the reactor the flux should not become zero if the slab is surrounded with vacuum as this is highlighted in Figure \ref{fig:boundary} A more meaningful boundary condition could be introduced through the partial currents. From Fick's law we could derive (see D\&H)
+Of course, at the edge of the reactor the flux should not become zero if the slab is surrounded with vacuum as this is highlighted in \autoref{fig:boundary} A more meaningful boundary condition could be introduced through the partial currents. From Fick's law we could derive (see D\&H)
 
 \begin{figure}[ht!]
 \protect \centering{
@@ -470,7 +470,7 @@ And we know that for a vacuum boundary $J_x^-(a)=0$, from which we find that the
 \caption{\label{fig:multislab} \footnotesize{Mathematically correct solutions to the diffusion equation in a slab. $n=0$ is the fundamental mode.}}
 \end{figure} 
 
-Note that the Helmoltz equation produces valid solutions at $B_{g,n}a=\frac{\pi}{2}+n\pi$, so $B_{g,n}=\frac{(2n+1)\pi}{2a}$. However those will not be physical, so we keep the $n=0$ fundamental mode, as shown in Figure \ref{fig:multislab}, and for this course we don't care about the other modes.
+Note that the Helmoltz equation produces valid solutions at $B_{g,n}a=\frac{\pi}{2}+n\pi$, so $B_{g,n}=\frac{(2n+1)\pi}{2a}$. However those will not be physical, so we keep the $n=0$ fundamental mode, as shown in \autoref{fig:multislab}, and for this course we don't care about the other modes.
 
 For a critical reactor $k=1$, the constant $B_m^2$ becomes
 
@@ -564,7 +564,7 @@ Z(z)=c_1\cos B_zz
 Z(z)=c_1cos(\frac{\pi}{H}z)
 \]
 
-For the radial dimension we need to consult our math books, and find that the function which could fulfill this equation is the Bessel function $J_0(B_rr)$. In fact, similarly as before here also the first and second kind Bessel functions would be solutions, but we drop the second kind to get positive values at $r=0$ as it is shown in Figure \ref{fig:cylinder}.
+For the radial dimension we need to consult our math books, and find that the function which could fulfill this equation is the Bessel function $J_0(B_rr)$. In fact, similarly as before here also the first and second kind Bessel functions would be solutions, but we drop the second kind to get positive values at $r=0$ as it is shown in \autoref{fig:cylinder}.
 
 \[
 R(r)=c_2J_0(\frac{2.405}{R}r)
@@ -620,7 +620,7 @@ $$\phi(x)=A\cdot\exp\Big(-\frac{x}{L}\Big)+B\cdot\exp\Big(\frac{x}{L}\Big)$$
 
 $$\mathrm{lim}_{x\rightarrow 0^+} -D\Bigg(-\frac{A}{L}\cdot\exp\Big(-\frac{x}{L}\Big)\Bigg)=\frac{AD}{L}=\frac{S_0}{2} \rightarrow A=\frac{S_0L}{2D}$$
 
-\noindent thus the solution is (illustrated in Fig. \ref{fig:nonmultislab}).
+\noindent thus the solution is (illustrated in \autoref{fig:nonmultislab}).
 
 $$\phi(x)=\frac{S_0L}{2D}\cdot\exp\Big(-\frac{|x|}{L}\Big)$$
 
@@ -635,15 +635,16 @@ $$\phi(x)=\frac{S_0L}{2D}\cdot\exp\Big(-\frac{|x|}{L}\Big)$$
 
 In practice the reactor is of course not surrounded with vacuum, but typically with some material which can scatter neutrons. This can mean, that the reactor core is surrounded with water, but in fast reactors often the core is surrounded with so called reflector assemblies (since the coolant would not reflect neutrons). The main reason of doing so is to reduce the leakage of neutrons.
 
-One could derive the flux shape for a reflected geometry. We will omit the derivation in the notes (see D\&H p211), just highlight that the criticality condition $B_g^2=B_m^2$ does not hold anymore. The flux shape is shown in Fig. \ref{fig:reflected} (top), the drop of the flux inside the reflector region will depend on the properties of the material. In case the absorption cross section of the material is high the flux quickly goes to zero (of course in that case we do not talk about a reflector anymore, rather an absorber or shield. 
+One could derive the flux shape for a reflected geometry. We will omit the derivation in the notes (see D\&H p211), just highlight that the criticality condition $B_g^2=B_m^2$ does not hold anymore. The flux shape is shown in \autoref{fig:reflected} (top), the drop of the flux inside the reflector region will depend on the properties of the material. In case the absorption cross section of the material is high the flux quickly goes to zero (of course in that case we do not talk about a reflector anymore, rather an absorber or shield. 
 
 \begin{figure}[ht!]
 \protect \centering{
-\includegraphics[scale=0.46] {figures/04-reflectedslab_Diffusion.png} \includegraphics[scale=0.46] {figures/04-reflectedslab_MC.png}}\protect
+\includegraphics[scale=0.46] {figures/04-reflectedslab_Diffusion.png}
+\includegraphics[scale=0.46] {figures/04-reflectedslab_MC.png}}\protect
 \caption{\label{fig:reflected} \footnotesize{Spatial distribution of the neutron flux in a reflected slab. Top 1-group diffusion theory. Bottom Monte Carlo particle transport results.}}
 \end{figure} 
 
-However, this is a geometry for which our academic tool, the 1-group method gives a rather bad approximation. Namely, that reflected geometries besides reducing leakage also serve to flatten the flux and the power distribution. As a result of this one could observe a peaking of the thermal flux close to the boundary between the core and the reflector as shown in the bottom of Figure \ref{fig:reflected}. However, one needs to apply at least 2-group theory to analyze this effect.
+However, this is a geometry for which our academic tool, the 1-group method gives a rather bad approximation. Namely, that reflected geometries besides reducing leakage also serve to flatten the flux and the power distribution. As a result of this one could observe a peaking of the thermal flux close to the boundary between the core and the reflector as shown in the bottom of \autoref{fig:reflected}. However, one needs to apply at least 2-group theory to analyze this effect.
 
 Since reflectors reduce leakage, the fissile core can have a smaller size to achieve criticality. This is called the reflector savings
 
@@ -651,7 +652,7 @@ Since reflectors reduce leakage, the fissile core can have a smaller size to ach
 \delta = a_{bare}-a_{reflector}
 \end{equation}
 
-\noindent which can be derived as a function of the reflector savings (D\&H p214). Figure \ref{fig:reflectorsavings} illustrates this. The figure indicates how much the critical size can be decreased when the reflector is added. As one would expect intuitively, the function saturates (at around $b=3L_r$), which means that after a certain reflector thickness the critical size of the core cannot be reduced, since neutrons will not reach to and scattered back from such a far distance.
+\noindent which can be derived as a function of the reflector savings (D\&H p214). \autoref{fig:reflectorsavings} illustrates this. The figure indicates how much the critical size can be decreased when the reflector is added. As one would expect intuitively, the function saturates (at around $b=3L_r$), which means that after a certain reflector thickness the critical size of the core cannot be reduced, since neutrons will not reach to and scattered back from such a far distance.
 
 \begin{figure}[ht!]
 \protect \centering{
@@ -718,7 +719,7 @@ And notice that similarly as before, we could identify the terms as gains and lo
 
 \subsection{Control rods}
 
-It is noteworthy to mention that certain elements in the reactor, such as control rods, can drastically change the spatial distribution of neutrons in the core, and also have an impact on the multiplication factor of the system. Figure \ref{fig:controlrod} illustrates the influence of a control rod insertion on the axial flux. We can see that the peak of the flux will shift to deeper regions of the core. The impact of the rod on the reactivity 
+It is noteworthy to mention that certain elements in the reactor, such as control rods, can drastically change the spatial distribution of neutrons in the core, and also have an impact on the multiplication factor of the system. \autoref{fig:controlrod} illustrates the influence of a control rod insertion on the axial flux. We can see that the peak of the flux will shift to deeper regions of the core. The impact of the rod on the reactivity 
 
 \[
 \rho=\frac{k-1}{k}
@@ -728,7 +729,7 @@ It is noteworthy to mention that certain elements in the reactor, such as contro
 
 \subsection{Calculation scheme}
 
-As a final note to our discussion on neutron transport, it is important to highlight that in this chapter we have barely scratched the surface. There is no numerical solution to the transport problem which can be applied directly at each levels of the reactor core besides Monte Carlo methods. Therefore the problem is typically split into tasks as illustrated with an oversimplified scheme in Figure \ref{fig:calculationscheme}. First the continuous cross section data is processed to obtain group-wise data. Then this is used to tackle the slowing down and thermalization problem at a pin or lattice level to obtain few group cross sections. Finally that is used in core level diffusion solvers. There can be of course other task to include depending the application, such as depletion calculations, or transient calculations, which are the topics of the following chapters.
+As a final note to our discussion on neutron transport, it is important to highlight that in this chapter we have barely scratched the surface. There is no numerical solution to the transport problem which can be applied directly at each levels of the reactor core besides Monte Carlo methods. Therefore the problem is typically split into tasks as illustrated with an oversimplified scheme in \autoref{fig:calculationscheme}. First the continuous cross section data is processed to obtain group-wise data. Then this is used to tackle the slowing down and thermalization problem at a pin or lattice level to obtain few group cross sections. Finally that is used in core level diffusion solvers. There can be of course other task to include depending the application, such as depletion calculations, or transient calculations, which are the topics of the following chapters.
 
 \begin{figure}[ht!]
 \protect \centering{

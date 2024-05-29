@@ -63,7 +63,7 @@ Thus when integrating a function over velocity, we can substitute
 \int\limits_{4\pi}d\mathbf{\Omega}=\int\limits_0^{2\pi}d\phi\int\limits_0^\pi \sin\theta d\theta
 \end{equation}
 
-\noindent and we can notice that in fact the differential $d\mathbf{\Omega}$ is a solid angle (an area illustrated with the small patch in Figure \ref{fig:solidangle})
+\noindent and we can notice that in fact the differential $d\mathbf{\Omega}$ is a solid angle (an area illustrated with the small patch in \autoref{fig:solidangle})
 
 \[
 d\mathbf{\Omega}=\sin\theta d\theta d\phi
@@ -93,7 +93,7 @@ Therefore, in this Appendix we briefly review pseudo random numbers, and  probab
 
 In order to sample probability density functions, we need random numbers. What is random? Something which lacks pattern and predictability. It doesn't make sense to discuss the randomness of a single number or event, only for a sequence of number of events. There are several methods to decide whether a sequence of numbers can be considered random.
 
-One could use measurement of random fluctuations of nature to generate random numbers. But this needs the data to be tabulated. Similarly we could use irrational numbers, such as $\pi$ as shown in Fig. \ref{fig:randompi}. In several applications in fact such tabulated data is being used.
+One could use measurement of random fluctuations of nature to generate random numbers. But this needs the data to be tabulated. Similarly we could use irrational numbers, such as $\pi$ as shown in \autoref{fig:randompi}. In several applications in fact such tabulated data is being used.
 
 \begin{figure}[ht!]
 \protect \centering{
@@ -130,7 +130,7 @@ C & 0.1
 \end{table}
 
 
-In order to sample random events from this distrubution we can follow the algorithm in Fig. \ref{fig:discrete}, which can be generalized for cases when there are more possible events. We perform the cumulative sum of probabilities, and get event j if $\sum_{i=1}^{j-1}p_i\leq r <\sum_{i=1}^{j}p_i$
+In order to sample random events from this distrubution we can follow the algorithm in \autoref{fig:discrete}, which can be generalized for cases when there are more possible events. We perform the cumulative sum of probabilities, and get event j if $\sum_{i=1}^{j-1}p_i\leq r <\sum_{i=1}^{j}p_i$
 
 \begin{figure}[ht!]
 \protect \centering{
@@ -143,7 +143,7 @@ In neutron transport, such discrete events will be important when we need to dec
 
 \subsubsection{Sampling continuous distributions}
 
-Let's consider that the distribution of a random value $x$ is described by a probability density function $p(x)$, and the related cumulative distribution function is $F(x)=\int_{-\infty}^xp(t)dt$ as shown in Fig. \ref{fig:pdfcdf}
+Let's consider that the distribution of a random value $x$ is described by a probability density function $p(x)$, and the related cumulative distribution function is $F(x)=\int_{-\infty}^xp(t)dt$ as shown in \autoref{fig:pdfcdf}
 
 \begin{figure}[ht!]
 \protect \centering{
@@ -160,7 +160,7 @@ x=F^{-1}(r)
 
 This method can be applied however only, when it possible to easily integrate the probability density function. This is for example the case in neutron transport when we need to sample random distances between collisions, since as we saw before, the distribution of the distance between collisions follows an exponential distribution. 
 
-However, if the given distribution is less well-behaving, and it is difficult to obtain the cumulative distribution function, we still have several options, from which here we review only one, the so called rejection sampling. We draw a random number, convert it to be between a and b, we draw an other one to create a y value based on the maximum of the pdf. If we are under the curve we accept the value, otherwise we reject it, and draw a new number. The algorithm is summarized in Fig. \ref{fig:rejection} Such a method will be useful, when for example sampling the birth neutron spectrum.
+However, if the given distribution is less well-behaving, and it is difficult to obtain the cumulative distribution function, we still have several options, from which here we review only one, the so called rejection sampling. We draw a random number, convert it to be between a and b, we draw an other one to create a y value based on the maximum of the pdf. If we are under the curve we accept the value, otherwise we reject it, and draw a new number. The algorithm is summarized in \autoref{fig:rejection} Such a method will be useful, when for example sampling the birth neutron spectrum.
 
 \begin{figure}[ht!]
 \protect \centering{
