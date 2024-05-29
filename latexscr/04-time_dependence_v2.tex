@@ -400,7 +400,7 @@ Considering the point kinetics equation Eq. \ref{eq:point_kinetics1}, we see tha
 When starting a nuclear reactor, the core is sub-critical with some margin, and the reactor does not produce any power. To start it, the reactor operator must remove control rods until the reactor reaches criticality. It is important here that the operator knows when criticality is reached, so that a safe doubling time is achieved. Since the reactor is at zero power, it is not possible to measure the doubling time by measuring the heat output. The key observable that can be measured at this point is the neutron flux. And as we have seen previously, the neutrons are tightly coupled to the multiplication in the system. The neutrons can originate from several different processes in a sub-critical system:
 
 \begin{itemize}
-\item Through spontaneous fission. The source is predominately U-235 in fresh fuel, with additions from Plutonium and Curium isotopes in used fuel. Each isotope has its own average neutron multiplicity for spontaneous fission, but typically around 2-3 neutrons are emitted per fission.
+\item Through spontaneous fission. The source is predominately U-235 in fresh fuel, with additions from plutonium and curium isotopes in used fuel. Each isotope has its own average neutron multiplicity for spontaneous fission, but typically around 2-3 neutrons are emitted per fission.
 
 \item Through ($\alpha$, n) reactions. Heavy isotopes such as uranium and plutonium alpha decays, and when the alpha particle interacts with light elements such as oxygen, the alpha particle can be absorbed, with a neutron emission following. For reactors, the most common fuel is UO2, hence there is a lot of oxygen present. This reaction sends out a single neutron.
 
@@ -599,7 +599,7 @@ The power defect is defined as the reactivity insertion required to bring the co
 D_p = \int_{T_{hot}}^{T_f}\alpha_f(T) + \int_{T_{hot}}^{T_m}\alpha_m(T)dT
 \end{equation}
 
-In addition to these three margins and defects, the consumption of U235 (and build-up of plutonium) also affects the reactor core. As fissile mass is depleted over time, the thermal fission factor $\eta$ decreases, and to maintain criticality more controllable poisons need to be removed. Hence, to operate the reactor for extended periods of time, additional criticality margin is needed, as compared to just the start-up process.
+In addition to these three margins and defects, the consumption of U-235 (and build-up of plutonium) also affects the reactor core. As fissile mass is depleted over time, the thermal fission factor $\eta$ decreases, and to maintain criticality more controllable poisons need to be removed. Hence, to operate the reactor for extended periods of time, additional criticality margin is needed, as compared to just the start-up process.
 
 In total, the shutdown margin, temperature and power defect, and fuel burnup determines how much controllable reactor poisons are needed to operate the core. On one hand, the more controllable poisons are required, the easier it is to control the reactor, since large changes in poison inventory is required to make small changes in the reactor power. On the other hand, using too much controllable poisons is costly and can be complex to design, which may reduce reliability, and thus affect safety. When designing the reactor, these two factors must be balanced.
 
@@ -618,7 +618,7 @@ Altogether these processes leading to the evolution of fuel are called burnup or
 
 \subsubsection{Depletion chains}
 
-As we saw before there are several neutron collision reactions (eg. fission, capture, (n,\textit{i}n) reactions), and several decay reactions which will transform a nuclide into an other nuclide. Similarly, as we saw before for decay series (Fig. \ref{fig:decaychain}, we can develop depletion chains, however these are fairly complex if every possible reaction is taken into account. The top of Fig. \ref{fig:depletionchain} shows all the (n,$\gamma$) and (n,2n) reactions, and all alpha and beta decay paths for an initial load of U238, whereas the lower figure shows some of the most important paths for the uranium depletion chain.
+As we saw before there are several neutron collision reactions (eg. fission, capture, (n,\textit{i}n) reactions), and several decay reactions which will transform a nuclide into an other nuclide. Similarly, as we saw before for decay series (Fig. \ref{fig:decaychain}, we can develop depletion chains, however these are fairly complex if every possible reaction is taken into account. The top of Fig. \ref{fig:depletionchain} shows all the (n,$\gamma$) and (n,2n) reactions, and all alpha and beta decay paths for an initial load of U-238, whereas the lower figure shows some of the most important paths for the uranium depletion chain.
 
 \begin{figure}[ht!]
 \protect \centering{
@@ -653,13 +653,13 @@ N(t)=\frac{\Sigma\phi}{\lambda}[1-exp(-\lambda t)] \quad \Rightarrow \quad A(t)=
 A(t\rightarrow \infty)=A_s=\Sigma\phi
 \end{equation}
 
-\noindent We see that infinity the activity and the concentration would saturate at a constant level (if the parent nuclide is not lost). How quickly we reach this saturation level depends on the half-life of the nuclide (the longer lived the nuclide is the longer it takes to reach saturation). If the irradiation takes place only for a finite time $t_{irr}$ after which the material is left to "cool", then the new differential equation to describe the change is simply
+\noindent We see that infinity the activity and the concentration would saturate at a constant level (if the parent nuclide is not lost). How quickly we reach this saturation level depends on the half-life of the nuclide (the longer lived the nuclide is the longer it takes to reach saturation). If the irradiation takes place only for a finite time $t_{irr}$ after which the material is left to ``cool'', then the new differential equation to describe the change is simply
 
 \begin{equation}
 \frac{dN^{after}}{dt}=-\lambda N^{after}
 \end{equation}
 
-\noindent where "after" refers to "after irradiation". The initial condition of this differential equation is $N^{after}(0)=N(t_{irr}$. The solution is simply the exponential decay:
+\noindent where ``after'' refers to ``after irradiation''. The initial condition of this differential equation is $N^{after}(0)=N(t_{irr}$. The solution is simply the exponential decay:
 
 \begin{equation}
 A(t_{cool}>t_{irr}=\Sigma\Phi[1-exp(-\lambda t_{irr})]\cdot exp(-\lambda t_{cool})
@@ -677,7 +677,7 @@ Fig. \ref{fig:irradiationconc} shows a simple sketch of the change of the nuclid
 
 \subsubsection*{Only one nuclide: lost to nuclear reaction}
 
-First let's consider a very simple situation when only one fuel isotope is present (eg. Uranium-235 $N_5$). For this isotope the decay is negligible, so we can assume that the only loss is due to the neutron absorption of  the isotope (described by $\sigma_5^a$), and there is no production of this isotope.
+First let's consider a very simple situation when only one fuel isotope is present (eg. uranium-235 $N_5$). For this isotope the decay is negligible, so we can assume that the only loss is due to the neutron absorption of  the isotope (described by $\sigma_5^a$), and there is no production of this isotope.
 
 \begin{equation}
 \frac{dN_5(r,t)}{dt}=-\sigma_5^a\phi(r,t)N_5(r,t)
@@ -768,7 +768,7 @@ As mentioned earlier, during irradiation fissile nuclei is created due to neutro
 \item $BR\leq 1$: converter or burner reactor
 \end{itemize}
 
-It is however not entirely straightforward to determine the breeding ratio of a nuclear reactor. Clearly, such quantity can be based on reaction rates (differential form) or the produced and destroyed mass of the material integrated over cycle (integral form). It is also notable that for fast breeder reactors several nuclides become "fissile", which further complicates the definition of such ratio. Here, we just mention that the topic has a wide literature, however we do not intend to take a closer look.
+It is however not entirely straightforward to determine the breeding ratio of a nuclear reactor. Clearly, such quantity can be based on reaction rates (differential form) or the produced and destroyed mass of the material integrated over cycle (integral form). It is also notable that for fast breeder reactors several nuclides become ``fissile'', which further complicates the definition of such ratio. Here, we just mention that the topic has a wide literature, however we do not intend to take a closer look.
 
 
 \subsubsection{Reactor poisoning: Xenon}

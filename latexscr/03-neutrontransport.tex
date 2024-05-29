@@ -53,9 +53,9 @@ n(\mathbf{r}, E, \mathbf{\Omega},t) = \:?
 \frac{\partial n(\mathbf{r}, E, \mathbf{\Omega},t)}{\partial t} = \:? = \text{gains} - \text{losses}
 \end{equation}
 
-The main focus of neutron transport is to figure out how to solve for the neutron population density $n(\mathbf{r}, E, \mathbf{\Omega},t)$. If we know this, we will know the location and velocity of all neutrons at all time. To achieve this, we will need to know the reaction rates which can take remove and add neutrons to the system. For all reactions there is an associated change in energy (except forward scattering which is basically a "miss"), change in momentum and direction.
+The main focus of neutron transport is to figure out how to solve for the neutron population density $n(\mathbf{r}, E, \mathbf{\Omega},t)$. If we know this, we will know the location and velocity of all neutrons at all time. To achieve this, we will need to know the reaction rates which can take remove and add neutrons to the system. For all reactions there is an associated change in energy (except forward scattering which is basically a ``miss''), change in momentum and direction.
 
-The balance equation is not going to be difficult. We have only couple of reactions which result in "gain" reactions. And when it is about losses, it is really just the total cross section which will come to play, since essentially all reactions result in a loss of a neutron at the certain phase space. Besides this we will have streaming terms: neutrons without reaction might come into our infinitesimal volume and might leave it, and we will be interested in the net outcome of these streaming movements. Nevertheless, as we will soon see, even though the equations developed are rather intuitive and straightforward, their solutions are challenging.
+The balance equation is not going to be difficult. We have only couple of reactions which result in ``gain'' reactions. And when it is about losses, it is really just the total cross section which will come to play, since essentially all reactions result in a loss of a neutron at the certain phase space. Besides this we will have streaming terms: neutrons without reaction might come into our infinitesimal volume and might leave it, and we will be interested in the net outcome of these streaming movements. Nevertheless, as we will soon see, even though the equations developed are rather intuitive and straightforward, their solutions are challenging.
 
 \subsection{Basic quantities: neutron density, flux and current}
 
@@ -103,7 +103,7 @@ R(\mathbf{r},E,t)dr^3dE=v(E)\Sigma(E) N(\mathbf{r},E,t)dr^3dE
 
 $$\Phi(\mathbf{r},t)=\int^\infty_0\Phi(\mathbf{r},E,t)dE=\int^\infty_0\int_{4\pi}\phi(\mathbf{r},E,\mathbf{\Omega},t)d\mathbf{\Omega}dE$$
 
-Note that the neutron flux often has a "bad reputation", and the reason is that it is because it is not like other flux quantities we are used to from physics, since the neutron flux is a scalar quantity (even the angular flux is scalar, to cause some headache), whereas fluxes in eg. heat conduction are vectors. And although the neutron flux does have a physical interpretation (total distance traveled in a volume per second by neutrons going into a certain direction with a certain energy), it is due to mathematical convenience that we prefer to work with it. 
+Note that the neutron flux often has a ``bad reputation'', and the reason is that it is because it is not like other flux quantities we are used to from physics, since the neutron flux is a scalar quantity (even the angular flux is scalar, to cause some headache), whereas fluxes in eg. heat conduction are vectors. And although the neutron flux does have a physical interpretation (total distance traveled in a volume per second by neutrons going into a certain direction with a certain energy), it is due to mathematical convenience that we prefer to work with it. 
 
 We can however introduce a quantity, the neutron current which rather corresponds to the conventional flux quantities. We can define the angular neutron current density
 
@@ -382,7 +382,7 @@ We have pointed out that the diffusion theory has certain limitations, let us su
 \begin{itemize}
 \item The anisotropy of flux will depend on location. If we are far from absorbers (control rods) and from locations where the spatial dependence of the flux is strong, then we can assume that the flux just weakly depends on the direction.
 
-\item Time dependence: we neglected the time derivative. If we wouldn't have done it, then the diffusion coefficient would have an $\omega/v$ "time absorption cross section". But for most processes in a reactor we can neglect this.
+\item Time dependence: we neglected the time derivative. If we wouldn't have done it, then the diffusion coefficient would have an $\omega/v$ ``time absorption cross section''. But for most processes in a reactor we can neglect this.
 
 \item The anisotropy of the scattering kernel: we have seen that for light nuclei the LAB scattering is anisotropic even for isotropic CM scattering. 
 \end{itemize}
@@ -454,7 +454,7 @@ Of course, at the edge of the reactor the flux should not become zero if the sla
 \begin{figure}[ht!]
 \protect \centering{
 \includegraphics[scale=0.46] {figures/04-vacuumboundaries.png}}\protect
-\caption{\label{fig:boundary} \footnotesize{Vacuum boundaries in transport and diffusion theory. One can observe that we need to "extrapolate" the boundary for diffusion.}}
+\caption{\label{fig:boundary} \footnotesize{Vacuum boundaries in transport and diffusion theory. One can observe that we need to ``extrapolate'' the boundary for diffusion.}}
 \end{figure} 
 
 
@@ -462,7 +462,7 @@ Of course, at the edge of the reactor the flux should not become zero if the sla
 J_x^\pm=\frac{1}{4}\Phi\mp\frac{1}{2}D\frac{d}{dx}\Phi
 \]
 
-And we know that for a vacuum boundary $J_x^-(a)=0$, from which we find that the flux should become zero at $a+2D$ (and based on transport equation even more accurate results could be obtained). This doesn't mean that the flux is physically zero at this location, since if the slab is surrounded by vacuum, the flux after the edge is going to be constant. It means that mathematically speaking if the flux would be extrapolated it should disappear at $a+2D$. In the following we will always assume "extrapolated boundaries", so we don't need to worry about this.
+And we know that for a vacuum boundary $J_x^-(a)=0$, from which we find that the flux should become zero at $a+2D$ (and based on transport equation even more accurate results could be obtained). This doesn't mean that the flux is physically zero at this location, since if the slab is surrounded by vacuum, the flux after the edge is going to be constant. It means that mathematically speaking if the flux would be extrapolated it should disappear at $a+2D$. In the following we will always assume ``extrapolated boundaries'', so we don't need to worry about this.
 
 \begin{figure}[ht!]
 \protect \centering{
