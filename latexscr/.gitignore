@@ -1,2 +1,3 @@
-.aux
-.out
+*.aux
+*.out
+*.toc
